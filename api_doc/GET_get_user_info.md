@@ -5,7 +5,7 @@ HOST: http://example
 
 ユーザーの情報を取得する
 
-## POST /api/nopaste
+## GET /api/get_user_info
 
 + Request
 

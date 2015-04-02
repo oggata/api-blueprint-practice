@@ -3,9 +3,9 @@ HOST: http://example
 
 # Nopaste
 
-タイトルと本文投稿する２
+ユーザーを削除する
 
-## POST /api/nopaste
+## POST /api/delete_user
 
 + Request
 
@@ -14,8 +14,7 @@ HOST: http://example
         Host: example
 
     + Parameters
-        + title (required, string) ... タイトル
-        + body (required, string) ... 本文
+        + user_id (required, number) ... ユーザーID
 
 + Response 201 (text/html)
 

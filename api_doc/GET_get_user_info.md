@@ -3,7 +3,7 @@ HOST: http://example
 
 # Nopaste
 
-タイトルと本文投稿する１
+ユーザーの情報を取得する
 
 ## POST /api/nopaste
 
@@ -14,8 +14,7 @@ HOST: http://example
         Host: example
 
     + Parameters
-        + title (required, string) ... タイトル
-        + body (required, string) ... 本文
+        + user_id (required, number) ... ユーザーID
 
 + Response 201 (text/html)
 
@@ -27,6 +26,7 @@ HOST: http://example
 
             {
                 "result": {
-                    "ok": 1
+                    "user_id": 1,
+                    "name": "taro"
                 }
             }

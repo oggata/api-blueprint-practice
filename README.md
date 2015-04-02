@@ -10,15 +10,19 @@
 
 #### How to use mock server
 
-$git clone git@github.com:oggata/api-blueprint-practice.git
-$cd api-blueprint-practice
+```bash
+git clone git@github.com:oggata/api-blueprint-practice.git
+cd api-blueprint-practice
 
-$npm install -g api-mock
-$api-mock api_doc/GET_get_user_list_001.md --port 3001
+npm install -g api-mock
+api-mock api_doc/GET_get_user_list_001.md --port 3001
+```
 
 #### Test Command
 
+```bash
 curl http://localhost:3001/api/get_user_list -X POST
 curl http://localhost:3001/api/insert_user -X POST -d "name=taro&profile_comment=test"
 curl http://localhost:3001/api/delete_user -X POST -d "user_id=1"
 curl http://localhost:3001/api/get_user_info -X GET -d "user_id=1"
+```
